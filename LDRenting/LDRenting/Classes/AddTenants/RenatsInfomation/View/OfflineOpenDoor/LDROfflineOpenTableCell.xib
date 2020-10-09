@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="LDROfflineOpenTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-LZ-jc8">
+                        <rect key="frame" x="168" y="73" width="136" height="99"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iccard_open" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-Mq-koy">
+                                <rect key="frame" x="16" y="12" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="eho-AI-Qde"/>
+                                    <constraint firstAttribute="width" constant="24" id="tJZ-Qf-5Ve"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwo-ue-lPn">
+                                <rect key="frame" x="90" y="12" width="30" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IC卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYP-P8-OQ8">
+                                <rect key="frame" x="16" y="44" width="24.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IC卡管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mw-fF-Mj7">
+                                <rect key="frame" x="16" y="72.5" width="49" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.58823529411764708" green="0.59999999999999998" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_to_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oVB-Ta-8qP">
+                                <rect key="frame" x="104" y="72" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Rfd-SC-1EL"/>
+                                    <constraint firstAttribute="height" constant="16" id="oZA-mE-ceD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qaq-Mq-koy" firstAttribute="leading" secondItem="3d4-LZ-jc8" secondAttribute="leading" constant="16" id="48D-xi-6fg"/>
+                            <constraint firstAttribute="trailing" secondItem="Vwo-ue-lPn" secondAttribute="trailing" constant="16" id="8ut-Lj-ilV"/>
+                            <constraint firstAttribute="bottom" secondItem="3mw-fF-Mj7" secondAttribute="bottom" constant="12" id="AIu-vO-GqX"/>
+                            <constraint firstItem="3mw-fF-Mj7" firstAttribute="leading" secondItem="vYP-P8-OQ8" secondAttribute="leading" id="HNA-VI-pQU"/>
+                            <constraint firstItem="qaq-Mq-koy" firstAttribute="top" secondItem="3d4-LZ-jc8" secondAttribute="top" constant="12" id="aUI-bK-o2W"/>
+                            <constraint firstAttribute="trailing" secondItem="oVB-Ta-8qP" secondAttribute="trailing" constant="16" id="aos-RZ-LpT"/>
+                            <constraint firstItem="3mw-fF-Mj7" firstAttribute="top" secondItem="vYP-P8-OQ8" secondAttribute="bottom" constant="14" id="ayW-br-eZu"/>
+                            <constraint firstItem="vYP-P8-OQ8" firstAttribute="top" secondItem="qaq-Mq-koy" secondAttribute="bottom" constant="8" id="bdE-BI-e9k"/>
+                            <constraint firstItem="Vwo-ue-lPn" firstAttribute="centerY" secondItem="qaq-Mq-koy" secondAttribute="centerY" id="ozZ-Hw-zQQ"/>
+                            <constraint firstItem="vYP-P8-OQ8" firstAttribute="leading" secondItem="qaq-Mq-koy" secondAttribute="leading" id="y81-Hf-QCj"/>
+                            <constraint firstItem="oVB-Ta-8qP" firstAttribute="centerY" secondItem="3mw-fF-Mj7" secondAttribute="centerY" id="z2n-F1-AwF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置线下开门方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRH-Up-I5F">
+                        <rect key="frame" x="16" y="20" width="98.5" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.56470588235294117" green="0.61176470588235299" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjB-MV-4Qt">
+                        <rect key="frame" x="16" y="73" width="136" height="99"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint_open" translatesAutoresizingMaskIntoConstraints="NO" id="Rqe-6b-Gcg">
+                                <rect key="frame" x="16" y="12" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="aF9-GZ-j5l"/>
+                                    <constraint firstAttribute="width" constant="24" id="q0s-zE-VMG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg7-Ff-CMw">
+                                <rect key="frame" x="90" y="12" width="30" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指纹开门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgO-Rc-PtK">
+                                <rect key="frame" x="16" y="44" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指纹管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkp-g9-61m">
+                                <rect key="frame" x="16" y="72.5" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.58823529411764708" green="0.59999999999999998" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_to_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-GU-26O">
+                                <rect key="frame" x="104" y="72" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="I6h-tJ-qe2"/>
+                                    <constraint firstAttribute="height" constant="16" id="mK0-Lm-hOd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kkp-g9-61m" firstAttribute="top" secondItem="EgO-Rc-PtK" secondAttribute="bottom" constant="14" id="43g-Tb-Pn4"/>
+                            <constraint firstItem="Dg7-Ff-CMw" firstAttribute="centerY" secondItem="Rqe-6b-Gcg" secondAttribute="centerY" id="4zf-ig-7Vf"/>
+                            <constraint firstItem="kkp-g9-61m" firstAttribute="leading" secondItem="EgO-Rc-PtK" secondAttribute="leading" id="5Ir-5R-gtM"/>
+                            <constraint firstItem="EgO-Rc-PtK" firstAttribute="leading" secondItem="Rqe-6b-Gcg" secondAttribute="leading" id="6oz-RV-F8i"/>
+                            <constraint firstItem="Rqe-6b-Gcg" firstAttribute="top" secondItem="NjB-MV-4Qt" secondAttribute="top" constant="12" id="G7J-QC-N2w"/>
+                            <constraint firstAttribute="trailing" secondItem="Mto-GU-26O" secondAttribute="trailing" constant="16" id="RTl-V4-pdJ"/>
+                            <constraint firstItem="Mto-GU-26O" firstAttribute="centerY" secondItem="kkp-g9-61m" secondAttribute="centerY" id="VtE-jk-pnI"/>
+                            <constraint firstAttribute="trailing" secondItem="Dg7-Ff-CMw" secondAttribute="trailing" constant="16" id="bAB-pE-ro1"/>
+                            <constraint firstAttribute="bottom" secondItem="kkp-g9-61m" secondAttribute="bottom" constant="12" id="hzF-7O-n0x"/>
+                            <constraint firstItem="EgO-Rc-PtK" firstAttribute="top" secondItem="Rqe-6b-Gcg" secondAttribute="bottom" constant="8" id="wzF-O0-jcS"/>
+                            <constraint firstItem="Rqe-6b-Gcg" firstAttribute="leading" secondItem="NjB-MV-4Qt" secondAttribute="leading" constant="16" id="wzr-MH-0Cq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NjB-MV-4Qt" secondAttribute="bottom" constant="16" id="3Ts-7V-hGF"/>
+                    <constraint firstItem="eRH-Up-I5F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="8QB-zB-FiA"/>
+                    <constraint firstItem="eRH-Up-I5F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9y6-uH-4id"/>
+                    <constraint firstItem="3d4-LZ-jc8" firstAttribute="width" secondItem="NjB-MV-4Qt" secondAttribute="width" id="Hi1-nn-3pd"/>
+                    <constraint firstAttribute="bottom" secondItem="3d4-LZ-jc8" secondAttribute="bottom" constant="16" id="Kb4-gp-snC"/>
+                    <constraint firstItem="3d4-LZ-jc8" firstAttribute="leading" secondItem="NjB-MV-4Qt" secondAttribute="trailing" constant="16" id="T7M-ab-bYp"/>
+                    <constraint firstItem="NjB-MV-4Qt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jkU-eb-tzg"/>
+                    <constraint firstItem="3d4-LZ-jc8" firstAttribute="height" secondItem="NjB-MV-4Qt" secondAttribute="height" id="m1P-l4-Ps4"/>
+                    <constraint firstAttribute="trailing" secondItem="3d4-LZ-jc8" secondAttribute="trailing" constant="16" id="plL-Qu-MzA"/>
+                    <constraint firstItem="NjB-MV-4Qt" firstAttribute="top" secondItem="eRH-Up-I5F" secondAttribute="bottom" constant="24" id="szb-hs-CVB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="fingerBackView" destination="NjB-MV-4Qt" id="KhU-tC-NhI"/>
+                <outlet property="icCardBackView" destination="3d4-LZ-jc8" id="eC5-ii-G9s"/>
+                <outlet property="openFingerButton" destination="Dg7-Ff-CMw" id="YaT-TA-zip"/>
+                <outlet property="openICCardButton" destination="Vwo-ue-lPn" id="WYG-5P-UIY"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fingerprint_open" width="24" height="24"/>
+        <image name="iccard_open" width="24" height="24"/>
+        <image name="right_to_icon" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

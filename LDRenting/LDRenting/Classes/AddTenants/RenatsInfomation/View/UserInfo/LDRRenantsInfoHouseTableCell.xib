@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="LDRRenantsInfoHouseTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-sB-wzZ">
+                        <rect key="frame" x="16" y="0.0" width="288" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKx-1O-Vxx">
+                                <rect key="frame" x="16" y="16" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入住房屋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-tX-b5a">
+                                <rect key="frame" x="16" y="51" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房租到期时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-9c-mn5">
+                                <rect key="frame" x="16" y="78.5" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKw-q6-pMR">
+                                <rect key="frame" x="241" y="51" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkq-t6-RRz">
+                                <rect key="frame" x="241" y="78.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkq-t6-RRz" firstAttribute="centerY" secondItem="Hv3-9c-mn5" secondAttribute="centerY" id="5J3-dC-gly"/>
+                            <constraint firstAttribute="bottom" secondItem="Hv3-9c-mn5" secondAttribute="bottom" constant="16" id="Bgb-kt-ePZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZKw-q6-pMR" secondAttribute="trailing" constant="16" id="G8R-Xa-KMF"/>
+                            <constraint firstItem="ZKw-q6-pMR" firstAttribute="centerY" secondItem="WTJ-tX-b5a" secondAttribute="centerY" id="IRy-yJ-ZIu"/>
+                            <constraint firstItem="WTJ-tX-b5a" firstAttribute="leading" secondItem="QKx-1O-Vxx" secondAttribute="leading" id="KXy-fO-iTm"/>
+                            <constraint firstItem="QKx-1O-Vxx" firstAttribute="leading" secondItem="DRr-sB-wzZ" secondAttribute="leading" constant="16" id="Mjj-Tl-KLF"/>
+                            <constraint firstItem="QKx-1O-Vxx" firstAttribute="top" secondItem="DRr-sB-wzZ" secondAttribute="top" constant="16" id="NDd-wA-Lzi"/>
+                            <constraint firstItem="WTJ-tX-b5a" firstAttribute="top" secondItem="QKx-1O-Vxx" secondAttribute="bottom" constant="18" id="Pd3-Pb-qsw"/>
+                            <constraint firstItem="Hv3-9c-mn5" firstAttribute="top" secondItem="WTJ-tX-b5a" secondAttribute="bottom" constant="13" id="VzA-Hp-8Er"/>
+                            <constraint firstAttribute="trailing" secondItem="dkq-t6-RRz" secondAttribute="trailing" constant="16" id="gfB-2v-F9E"/>
+                            <constraint firstItem="Hv3-9c-mn5" firstAttribute="leading" secondItem="WTJ-tX-b5a" secondAttribute="leading" id="xSS-Rf-7yc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DRr-sB-wzZ" secondAttribute="bottom" id="B4g-qV-Aq7"/>
+                    <constraint firstItem="DRr-sB-wzZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VQL-NW-hpi"/>
+                    <constraint firstAttribute="trailing" secondItem="DRr-sB-wzZ" secondAttribute="trailing" constant="16" id="eHw-53-oTb"/>
+                    <constraint firstItem="DRr-sB-wzZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fdr-CM-4sa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="DRr-sB-wzZ" id="lQm-1c-uLL"/>
+                <outlet property="houseDetailLabel" destination="ZKw-q6-pMR" id="NWJ-Lj-7Gs"/>
+                <outlet property="houseLabel" destination="WTJ-tX-b5a" id="MrI-fA-kz6"/>
+                <outlet property="houseTimeDetailLabel" destination="dkq-t6-RRz" id="Ri6-gH-Ck6"/>
+                <outlet property="houseTimeLabel" destination="Hv3-9c-mn5" id="QDp-AC-meR"/>
+                <outlet property="titlesLabel" destination="QKx-1O-Vxx" id="3BC-oP-Hz9"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

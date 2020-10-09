@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LDRContentImageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CSA-Df-yfg">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="120"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-yU-OSg">
+                        <rect key="frame" x="152" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GE6-bw-sdR"/>
+                            <constraint firstAttribute="height" constant="20" id="sBm-0y-h3l"/>
+                        </constraints>
+                        <state key="normal" image="delete_image_icon"/>
+                        <connections>
+                            <action selector="deleteButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9J4-x0-oRP"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="CSA-Df-yfg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="894-dd-Yyb"/>
+                <constraint firstAttribute="bottom" secondItem="CSA-Df-yfg" secondAttribute="bottom" id="92u-xO-eNV"/>
+                <constraint firstItem="0fp-yU-OSg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AKM-Is-E5B"/>
+                <constraint firstAttribute="trailing" secondItem="CSA-Df-yfg" secondAttribute="trailing" id="Mos-w1-xVN"/>
+                <constraint firstAttribute="trailing" secondItem="0fp-yU-OSg" secondAttribute="trailing" id="hci-lP-08m"/>
+                <constraint firstItem="CSA-Df-yfg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uKh-v1-mX1"/>
+            </constraints>
+            <size key="customSize" width="172" height="120"/>
+            <connections>
+                <outlet property="deleteButton" destination="0fp-yU-OSg" id="UEh-gT-4PP"/>
+                <outlet property="imageView" destination="CSA-Df-yfg" id="8ut-0T-9Gt"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="97.098214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_image_icon" width="20" height="20"/>
+    </resources>
+</document>

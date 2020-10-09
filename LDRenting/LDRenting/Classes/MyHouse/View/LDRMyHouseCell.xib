@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="LDRMyHouseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbR-d5-rLJ">
+                        <rect key="frame" x="16" y="8" width="288" height="192"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大菠萝的家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdl-2N-rkp">
+                                <rect key="frame" x="16" y="16" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：摩根中心-B栋25层3401" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjd-zv-kWI">
+                                <rect key="frame" x="16" y="41" width="193.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="租客人数： 0人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-ny-ZfV">
+                                <rect key="frame" x="16" y="66" width="71" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-nf-QvV">
+                                <rect key="frame" x="0.0" y="136" width="144" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qJn-pe-tRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="添加租客" image="myhouse_add_people"/>
+                                <connections>
+                                    <action selector="addPeopleButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DkU-7q-Af7"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iju-kz-y82">
+                                <rect key="frame" x="144" y="146" width="0.5" height="20"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gUE-GI-KWc"/>
+                                    <constraint firstAttribute="width" constant="0.5" id="iyX-1n-GdK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxG-NZ-Fca">
+                                <rect key="frame" x="144.5" y="136" width="143.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fKZ-x5-1C1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="记一笔" image="myhouse_booking"/>
+                                <connections>
+                                    <action selector="bookingButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7jS-4K-dxc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gdl-2N-rkp" firstAttribute="top" secondItem="FbR-d5-rLJ" secondAttribute="top" constant="16" id="3rf-25-laY"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XPU-ny-ZfV" secondAttribute="bottom" constant="84" id="7LD-e7-8QE"/>
+                            <constraint firstItem="Sjd-zv-kWI" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FbR-d5-rLJ" secondAttribute="trailing" constant="-16" id="ABz-sj-hbB"/>
+                            <constraint firstAttribute="bottom" secondItem="nJo-nf-QvV" secondAttribute="bottom" constant="16" id="AUC-V2-6vf"/>
+                            <constraint firstItem="Gdl-2N-rkp" firstAttribute="leading" secondItem="FbR-d5-rLJ" secondAttribute="leading" constant="16" id="DvU-9w-xg9"/>
+                            <constraint firstAttribute="trailing" secondItem="zxG-NZ-Fca" secondAttribute="trailing" id="F8H-lF-Ihe"/>
+                            <constraint firstItem="nJo-nf-QvV" firstAttribute="leading" secondItem="FbR-d5-rLJ" secondAttribute="leading" id="Ib6-Yu-qjs"/>
+                            <constraint firstItem="zxG-NZ-Fca" firstAttribute="width" secondItem="nJo-nf-QvV" secondAttribute="width" id="QIp-Y7-H9t"/>
+                            <constraint firstItem="XPU-ny-ZfV" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FbR-d5-rLJ" secondAttribute="trailing" constant="-16" id="S26-DY-g9B"/>
+                            <constraint firstItem="Iju-kz-y82" firstAttribute="centerY" secondItem="nJo-nf-QvV" secondAttribute="centerY" id="TNL-YW-ifu"/>
+                            <constraint firstItem="XPU-ny-ZfV" firstAttribute="leading" secondItem="Gdl-2N-rkp" secondAttribute="leading" id="ax6-Lc-uta"/>
+                            <constraint firstItem="XPU-ny-ZfV" firstAttribute="top" secondItem="Sjd-zv-kWI" secondAttribute="bottom" constant="8" id="geM-fU-ocQ"/>
+                            <constraint firstItem="zxG-NZ-Fca" firstAttribute="leading" secondItem="Iju-kz-y82" secondAttribute="trailing" id="hMi-zw-tTs"/>
+                            <constraint firstItem="Iju-kz-y82" firstAttribute="leading" secondItem="nJo-nf-QvV" secondAttribute="trailing" id="jvu-cQ-lS9"/>
+                            <constraint firstItem="Sjd-zv-kWI" firstAttribute="top" secondItem="Gdl-2N-rkp" secondAttribute="bottom" constant="4" id="kF2-Qu-OIs"/>
+                            <constraint firstAttribute="bottom" secondItem="zxG-NZ-Fca" secondAttribute="bottom" constant="16" id="nlK-eU-Drp"/>
+                            <constraint firstItem="Sjd-zv-kWI" firstAttribute="leading" secondItem="Gdl-2N-rkp" secondAttribute="leading" id="ppN-rV-QuR"/>
+                            <constraint firstItem="Gdl-2N-rkp" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FbR-d5-rLJ" secondAttribute="trailing" constant="-16" id="v8r-he-Exk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FbR-d5-rLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="29k-qV-CxD"/>
+                    <constraint firstAttribute="trailing" secondItem="FbR-d5-rLJ" secondAttribute="trailing" constant="16" id="9a9-Nk-cQX"/>
+                    <constraint firstItem="FbR-d5-rLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="U8h-qH-tby"/>
+                    <constraint firstAttribute="bottom" secondItem="FbR-d5-rLJ" secondAttribute="bottom" constant="8" id="b6U-V3-Ou3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addPeopleButton" destination="nJo-nf-QvV" id="1pf-VS-lzF"/>
+                <outlet property="addressLabel" destination="Sjd-zv-kWI" id="9iB-cJ-4Gw"/>
+                <outlet property="backView" destination="FbR-d5-rLJ" id="ZMq-OD-XIS"/>
+                <outlet property="bigTitleLabel" destination="Gdl-2N-rkp" id="3As-KT-RJl"/>
+                <outlet property="bookingButton" destination="zxG-NZ-Fca" id="A0G-xD-GmO"/>
+                <outlet property="peopleNumber" destination="XPU-ny-ZfV" id="nLi-gA-nU7"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="169.41964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="myhouse_add_people" width="16" height="16"/>
+        <image name="myhouse_booking" width="16" height="16"/>
+    </resources>
+</document>

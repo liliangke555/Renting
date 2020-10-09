@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="LDRHomeLoginHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="X5B-bP-CKX">
+                    <rect key="frame" x="16" y="60" width="361.5" height="209"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计收入(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I62-Gu-XFP">
+                            <rect key="frame" x="16" y="13" width="70.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH5-j5-MvB">
+                            <rect key="frame" x="90.5" y="10.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="aHb-GU-KVk"/>
+                                <constraint firstAttribute="width" constant="20" id="y0H-tD-f19"/>
+                            </constraints>
+                            <state key="normal" image="home_help"/>
+                            <connections>
+                                <action selector="helpButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="a4r-u5-Kyc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-37-WxV">
+                            <rect key="frame" x="16" y="35.5" width="52" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-TX-FyW">
+                            <rect key="frame" x="80" y="38" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="TlA-He-o1a"/>
+                                <constraint firstAttribute="height" constant="24" id="spH-4p-LbE"/>
+                            </constraints>
+                            <state key="normal" image="home_eye_open"/>
+                            <state key="selected" image="home_eye_close"/>
+                            <connections>
+                                <action selector="checkMoneyButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="TXh-Js-4ck"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房租收入(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-Nj-Vyz">
+                            <rect key="frame" x="16" y="88.5" width="70.5" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-wr-8mW">
+                            <rect key="frame" x="16" y="111.5" width="37.5" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-TV-xfl">
+                            <rect key="frame" x="145.5" y="111.5" width="11.5" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFa-3C-skM">
+                            <rect key="frame" x="262.5" y="111.5" width="37.5" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECh-B0-zOB">
+                            <rect key="frame" x="262.5" y="88.5" width="83" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="收益分红(元)" image="home_right_gray">
+                                <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="profitBonusButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z2S-9Q-Nkr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-ei-WYM">
+                            <rect key="frame" x="277.5" y="19" width="84" height="32"/>
+                            <color key="backgroundColor" red="0.36862745098039218" green="0.43529411764705883" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1uP-Ft-nCl"/>
+                                <constraint firstAttribute="width" constant="84" id="Ueh-rG-SIV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title=" 我的账单" image="home_mybill"/>
+                            <connections>
+                                <action selector="myBillButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ICW-6B-ZMn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的卡包(张)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-jm-Qik">
+                            <rect key="frame" x="145.5" y="89" width="70.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.26666666666666666" green="0.32549019607843138" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="aH5-j5-MvB" firstAttribute="centerY" secondItem="I62-Gu-XFP" secondAttribute="centerY" id="2Ti-no-yID"/>
+                        <constraint firstItem="wUd-Nj-Vyz" firstAttribute="leading" secondItem="X5B-bP-CKX" secondAttribute="leading" constant="16" id="4OJ-bS-LcM"/>
+                        <constraint firstItem="yFz-TV-xfl" firstAttribute="leading" secondItem="2Ih-jm-Qik" secondAttribute="leading" id="5dP-U9-KqW"/>
+                        <constraint firstItem="I62-Gu-XFP" firstAttribute="leading" secondItem="X5B-bP-CKX" secondAttribute="leading" constant="16" id="6cn-f3-QDC"/>
+                        <constraint firstAttribute="trailing" secondItem="ECh-B0-zOB" secondAttribute="trailing" constant="16" id="6n7-0S-mH1"/>
+                        <constraint firstItem="aH5-j5-MvB" firstAttribute="leading" secondItem="I62-Gu-XFP" secondAttribute="trailing" constant="4" id="G5g-ek-RGm"/>
+                        <constraint firstItem="qfm-wr-8mW" firstAttribute="top" secondItem="wUd-Nj-Vyz" secondAttribute="bottom" constant="8" id="HDr-5Z-QJ4"/>
+                        <constraint firstItem="ECh-B0-zOB" firstAttribute="centerY" secondItem="wUd-Nj-Vyz" secondAttribute="centerY" id="I7G-rG-lMS"/>
+                        <constraint firstItem="yFz-TV-xfl" firstAttribute="centerY" secondItem="qfm-wr-8mW" secondAttribute="centerY" id="OUf-Hh-ZIs"/>
+                        <constraint firstItem="zjl-TX-FyW" firstAttribute="centerY" secondItem="S6H-37-WxV" secondAttribute="centerY" id="SVj-jG-Ljh"/>
+                        <constraint firstItem="I62-Gu-XFP" firstAttribute="top" secondItem="X5B-bP-CKX" secondAttribute="top" constant="13" id="Ukm-pJ-UNE"/>
+                        <constraint firstItem="qfm-wr-8mW" firstAttribute="leading" secondItem="wUd-Nj-Vyz" secondAttribute="leading" id="a5J-eW-62n"/>
+                        <constraint firstItem="FZO-ei-WYM" firstAttribute="top" secondItem="X5B-bP-CKX" secondAttribute="top" constant="19" id="cEl-QB-SOg"/>
+                        <constraint firstItem="zjl-TX-FyW" firstAttribute="leading" secondItem="S6H-37-WxV" secondAttribute="trailing" constant="12" id="gYG-CV-OxN"/>
+                        <constraint firstItem="S6H-37-WxV" firstAttribute="top" secondItem="I62-Gu-XFP" secondAttribute="bottom" constant="8" id="itn-hn-rnf"/>
+                        <constraint firstItem="wUd-Nj-Vyz" firstAttribute="top" secondItem="S6H-37-WxV" secondAttribute="bottom" constant="24" id="kLq-Rz-Otg"/>
+                        <constraint firstItem="2Ih-jm-Qik" firstAttribute="centerY" secondItem="wUd-Nj-Vyz" secondAttribute="centerY" id="l8V-Oo-Pmz"/>
+                        <constraint firstItem="2Ih-jm-Qik" firstAttribute="centerX" secondItem="X5B-bP-CKX" secondAttribute="centerX" id="oGM-VX-W1E"/>
+                        <constraint firstItem="S6H-37-WxV" firstAttribute="leading" secondItem="I62-Gu-XFP" secondAttribute="leading" id="pe5-Yj-9jz"/>
+                        <constraint firstItem="vFa-3C-skM" firstAttribute="centerY" secondItem="qfm-wr-8mW" secondAttribute="centerY" id="whf-Xg-HZb"/>
+                        <constraint firstAttribute="trailing" secondItem="FZO-ei-WYM" secondAttribute="trailing" id="xqi-9o-Pe0"/>
+                        <constraint firstItem="vFa-3C-skM" firstAttribute="leading" secondItem="ECh-B0-zOB" secondAttribute="leading" id="zwF-oD-9mq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X5B-bP-CKX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="9d3-gE-WHd"/>
+                <constraint firstItem="X5B-bP-CKX" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Msf-tt-FYy"/>
+                <constraint firstItem="X5B-bP-CKX" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.922705" id="Nak-QK-JTp"/>
+                <constraint firstItem="X5B-bP-CKX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="r0q-GP-hYs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomBackView" destination="X5B-bP-CKX" id="YOL-AM-kJf"/>
+                <outlet property="checkMoneyButton" destination="X5B-bP-CKX" id="ad6-DV-qes"/>
+                <outlet property="helpButton" destination="aH5-j5-MvB" id="HWe-a2-K92"/>
+                <outlet property="myBillButton" destination="FZO-ei-WYM" id="gyy-uV-M77"/>
+                <outlet property="myCardLabel" destination="yFz-TV-xfl" id="XDN-cD-hZA"/>
+                <outlet property="profitBonusButton" destination="ECh-B0-zOB" id="5l7-5u-r18"/>
+                <outlet property="profitBonusLabel" destination="vFa-3C-skM" id="hDx-3a-xoi"/>
+                <outlet property="rentingIncomeLabel" destination="qfm-wr-8mW" id="X0s-V6-Kx9"/>
+                <outlet property="totalIncomeLabel" destination="S6H-37-WxV" id="pwQ-hd-sHu"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="-170.42410714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_eye_close" width="24" height="24"/>
+        <image name="home_eye_open" width="24" height="24"/>
+        <image name="home_help" width="20" height="20"/>
+        <image name="home_mybill" width="16" height="16"/>
+        <image name="home_right_gray" width="12" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,1 @@
+window.getAppKey('FFFF0N00000000005BB4','nc_login_h5')
